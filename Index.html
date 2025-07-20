@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Taniti</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #003f5c;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    nav h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffa600;
+    }
+
+    /* Hero Banner */
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+      height: 320px;
+      background-size: cover;
+      background-position: center;
+      border-bottom: 5px solid #003f5c;
+    }
+
+    .main-section {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .main-section h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nav-button {
+      background: #ffa600;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 16px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .nav-button:hover {
+      background: #ff7c00;
+    }
+
+    footer {
+      background-color: #003f5c;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Taniti Island</h1>
+    <div class="nav-links">
+      <a href="things-to-do enhanced.html">Things to Do</a>
+      <a href="book your trip enhanced">Book Trip</a>
+      <a href="restaurant.html">Restaurants</a>
+      <a href="travel-info.html">Travel Info</a>
+    </div>
+  </nav>
+
+  <div class="hero"></div>
+
+  <div class="main-section">
+    <h2>Welcome to Taniti</h2>
+    <p>Discover paradise. Plan your perfect island getaway with sun, adventure, and culture.</p>
+
+    <div class="button-row">
+      <a href="things-to-do enhanced.html"><button class="nav-button">Things to Do</button></a>
+      <a href="book your trip enhanced.html"><button class="nav-button">Book Now</button></a>
+      <a href="restaurant.html"><button class="nav-button">Restaurants</button></a>
+      <a href="travel-info.html"><button class="nav-button">Travel Info</button></a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Taniti Tourism Board | Explore Taniti with Confidence
+  </footer>
+
+</body>
+</html>
