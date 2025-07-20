@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurants | Taniti</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    nav {
+      background-color: #003f5c;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ffa600;
+    }
+
+    .main-section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #222;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .filter {
+      background-color: #e9f4ff;
+      padding: 15px 25px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+      color: #004466;
+    }
+
+    .card {
+      display: flex;
+      gap: 20px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-bottom: 25px;
+      align-items: center;
+    }
+
+    .card img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card-content {
+      flex-grow: 1;
+    }
+
+    .card-content h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .card-content p {
+      margin: 5px 0;
+      color: #444;
+    }
+
+    .note {
+      background-color: #fff2e6;
+      color: #a14c00;
+      padding: 15px 20px;
+      border-left: 6px solid #ff8800;
+      margin-top: 40px;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #003f5c;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Taniti Island</h1>
+    <div class="nav-links">
+      <a href="Welcome to Taniti.html">Home</a>
+      <a href="things-to-do enhanced.html">Things to Do</a>
+      <a href="book your trip enhanced.html">Book Trip</a>
+      <a href="travel-info.html">Travel Info</a>
+    </div>
+  </nav>
+
+  <div class="main-section">
+    <h2>Restaurants</h2>
+
+    <div class="filter">
+      Browse by Cuisine: Local • American • Pan-Asian
+    </div>
+
+    <div class="card">
+      <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="Island Grill">
+      <div class="card-content">
+        <h3>Island Grill</h3>
+        <p>Type: Local Cuisine</p>
+        <p>Hours: 11am – 10pm Daily</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg" alt="Sunset Diner">
+      <div class="card-content">
+        <h3>Sunset Diner</h3>
+        <p>Type: American Classics</p>
+        <p>Hours: 8am – 9pm Mon–Sat</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg" alt="Lotus Garden">
+      <div class="card-content">
+        <h3>Lotus Garden</h3>
+        <p>Type: Pan-Asian Fusion</p>
+        <p>Hours: 12pm – 11pm Daily</p>
+      </div>
+    </div>
+
+    <div class="note">
+      Please note: Alcohol is not served or sold on Sundays.
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Taniti Tourism Board | Eat Well, Island Style
+  </footer>
+
+</body>
+</html>

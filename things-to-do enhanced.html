@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Things to Do in Taniti</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #1e3a5f;
+      padding: 10px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h2 {
+      color: #fff;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: url('https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg?auto=compress&cs=tinysrgb&h=800') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    /* Activity Grid */
+    .activities {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .activity {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .activity:hover {
+      transform: translateY(-5px);
+    }
+
+    .activity-image {
+      height: 220px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .outdoor {
+      background-image: url('https://images.pexels.com/photos/4591900/pexels-photo-4591900.jpeg?auto=compress&cs=tinysrgb&h=600');
+    }
+
+    .cultural {
+      background-image: url('https://images.pexels.com/photos/12556358/pexels-photo-12556358.jpeg?auto=compress&cs=tinysrgb&h=600');
+    }
+
+    .activity-content {
+      padding: 20px;
+    }
+
+    .activity-content h3 {
+      margin-top: 0;
+    }
+
+    /* Unified Button Style */
+    .nav-button {
+      background: #ffa600;
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 16px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+      transition: background 0.3s;
+    }
+
+    .nav-button:hover {
+      background: #ff7c00;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e3a5f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .activities {
+        grid-template-columns: 1fr;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h2>Visit Taniti</h2>
+    <ul>
+      <li><a href="Welcome to Taniti.html">Home</a></li>
+      
+      <li><a href="book your trip enhanced.html">Book Trip</a></li>
+	  <li><a href="Restaurant.html">Restaurants</a></li>
+	  <li><a href="travel-info.html">Travel Info</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Explore Taniti</h1>
+    <p>Discover exciting outdoor adventures and rich cultural experiences</p>
+  </section>
+
+  <!-- Activities -->
+  <section class="activities">
+    <div class="activity">
+      <div class="activity-image outdoor"></div>
+      <div class="activity-content">
+        <h3>Outdoor Adventures</h3>
+        <p>Enjoy hiking, volcano tours, and beautiful tropical beaches.</p>
+        <a href="book your trip enhanced.html" class="nav-button">Book Outdoor Tour</a>
+      </div>
+    </div>
+
+    <div class="activity">
+      <div class="activity-image cultural"></div>
+      <div class="activity-content">
+        <h3>Cultural Experiences</h3>
+        <p>Immerse yourself in local art, history, and traditional dance.</p>
+        <a href="book your trip enhanced.html" class="nav-button">Book Cultural Experience</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Visit Taniti. All rights reserved.
+  </footer>
+
+</body>
+</html>
